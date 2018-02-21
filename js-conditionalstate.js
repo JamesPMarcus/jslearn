@@ -270,4 +270,49 @@ select.onchange = function() {
   ( select.value === 'black' ) ? update('black','white') : update('white','black');
 }
     
+
+//task 
+
+//Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’
+
+let off = prompt("What is the official name of Javascript?", "");
     
+if (off == "ECMAScript") {
+    alert("Right!");
+} else {
+    alert("Didn't know ECMAScript!");
+}
+    
+    
+let number = prompt("Number please", 0);
+    if (number > 0) {
+        alert (1);
+    } else if (number <0) {
+        alert (-1);
+    } else {
+        alert (0);
+    }
+    
+    
+let login = prompt("Usernmane", "");
+    
+if (login =="Admin") {
+        let pass = prompt("Password","");
+        
+          if (pass =="TheMaster") {
+        alert ("Welcome!");
+    } else if (pass ==null) {
+        alert ("Canceled");
+    } else {
+        alert ("Wrong password");
+    }
+        
+        
+}else if (login ==null) {
+alert("Canceled");
+else {
+alert ("I don't know you");
+}
+    
+    
+  
