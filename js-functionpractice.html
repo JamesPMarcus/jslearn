@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Function Practice</title>
+  </head>
+  <body>
+      <script>
+      
+        function add7(number) {
+            let ans = number + 7;
+            console.log (ans);
+        } 
+          
+          add7(8);
+          
+          function multiply(num1,num2) {
+              let prod = num1 * num2;
+              console.log (prod);
+          }
+          
+          multiply(5,7);
+          
+          
+          function capitalize(x) {
+              let beg = x.charAt(0);
+              let rest =x.substr(1);
+              let upper = beg.toUpperCase() + rest.toLowerCase();
+              
+              console.log(upper);
+          }
+          
+          capitalize('gEllLo');
+      
+      
+      function lastLetter(string) {
+        let last = string.slice(-1);
+          console.log(last);
+          
+      }
+      
+          lastLetter('hello');
+      
+      </script>
+  
+  </body>
+</html>
