@@ -178,3 +178,138 @@ output.appendChild(para);
 }
 
 
+var people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+    
+var admitted = document.querySelector('.admitted');
+var refused = document.querySelector('.refused');
+admitted.textContent = 'Admit: ';
+refused.textContent = 'Refuse: '
+
+for ( i = 0; i < people.length; i++) {
+
+	if (i==people.length - 1) {
+		 admitted.textContent +=  people[i] + '.';
+	}
+	else if (i ==4 || i==5) {
+		refused.textContent += people[i] + ' '; 
+	}
+	else {
+		 admitted.textContent +=  people[i] + ', ';
+	}
+}
+
+refused.textContent = refused.textContent.slice(0,refused.textContent.length-2) + '.';
+admitted.textContent = admitted.textContent.slice(0,admitted.textContent.length-2) + '.';
+
+
+//Tasks
+
+//What is the last value alerted by this code? Why?
+
+let i = 3;
+
+while (i) {
+  alert( i-- );
+}
+
+//1
+
+
+//For every loop, write down which values it shows, in your opinion. And then compare with the answer.
+
+//Both loops alert same values or not?
+
+//The prefix form ++i:
+
+let i = 0;
+while (++i < 5) alert( i );
+
+//1, 1, 2, 3, 4
+//prefix returns new value 
+
+//The postfix form i++
+
+let i = 0;
+while (i++ < 5) alert( i );
+
+//1 2 3 4 5
+//postfix returns old value 
+
+
+//For each loop write down which values it is going to show. Then compare with the answer.
+
+//Both loops alert same values or not?
+
+//The postfix form:
+
+for (let i = 0; i < 5; i++) alert( i );
+
+//The prefix form:
+
+for (let i = 0; i < 5; ++i) alert( i );
+
+//both 01234
+
+
+
+//Use the for loop to output even numbers from 2 to 10.
+
+let i = 0;
+for (i=0; i<11; i++) {
+    if (i % 2 == 0) {
+        alert (i);
+    }
+}
+
+
+
+//Rewrite the code changing the for loop to while without altering its behavior (the output should stay same).
+
+ for (let i = 0; i < 3; i++) {
+  alert( `number ${i}!` );
+}
+
+let i = 0;
+while(i < 3) {
+    alert( `number ${i}!` );
+    i++;
+}
+
+
+//Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask him to input again.
+
+let sum = 0
+
+while (true) {
+
+  let value = +prompt("Enter a number greater than 100", '');
+
+  if (value > 100) {
+      sum = value;
+      break; // (*)
+    
+   } else {
+        alert('Please enter a number greater than 100');
+    }
+
+}
+alert( sum );
+
+
+//Write the code which outputs prime numbers in the interval from 2 to n.
+
+For n = 10 the result will be 2,3,5,7.
+
+P.S. The code should work for any n, not be hard-tuned for any fixed value.
+
+let n = +prompt('Enter number', '');
+
+for (let i = 2; i <=n; i++) {
+    
+    for (let j = 2; j < i); j++) {
+    
+        if (j % i == 0); continue;
+    }
+    
+alert(i);
+}
